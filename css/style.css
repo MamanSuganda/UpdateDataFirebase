@@ -1,0 +1,36 @@
+*{
+    font-family: 'poppins';
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-family: 'poppins';
+    font-size: 23pt;
+}
+#updateForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #e7bfff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#dataKey{
+    margin-bottom: 20px;
+}
+#newValue{
+    margin-bottom: 20px;
+}
+.button-update{
+    background: linear-gradient(#b000c3, #6a00ac);
+    height: 40px;
+    width: 200px;
+    font-size: 12pt;
+    border-radius: 50px;
+    color: #ffffff;
+    border-color: #f53dff;
+}

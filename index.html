@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Data To Firebase</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Update Data di Firebase</h1>
+        <form id="updateForm">
+          <label for="dataKey">Masukkan Key Data:</label>
+          <input type="text" id="dataKey" placeholder="Sensor" required />
+    
+          <label for="newValue">Masukkan Data Baru:</label>
+          <input type="text" id="newValue" placeholder="Nilai" required />
+    
+          <button type="submit" class="button-update">Update Data</button>
+        </form>
+        <p id="statusUpdate"></p>
+      </div>
+    
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
