@@ -22,30 +22,6 @@ const firebaseConfig = {
   const newValueInput = document.getElementById('newValue');
   const statusUpdate = document.getElementById('statusUpdate');
 
-  formInput.addEventListener('submit', (e) => {
-    e.preventDefault(); // Mencegah reload halaman
-
-    const inputData = input.value;
-
-    if (inputData) {
-      // Kirim data ke Firebase
-      database.ref('database/satu').push({ value: inputData })
-        .then(() => {
-          statusMessage.textContent = "Data berhasil dikirim!";
-          statusMessage.style.color = "green";
-          formInput.reset();
-        })
-        .catch((error) => {
-          statusMessage.textContent = "Gagal mengirim data: " + error.message;
-          statusMessage.style.color = "red";
-        });
-    } else {
-      statusMessage.textContent = "Input tidak boleh kosong!";
-      statusMessage.style.color = "red";
-    }
-  });
-
-
   formUpdate.addEventListener('submit', (e) => {
     e.preventDefault(); // Mencegah reload halaman
 
