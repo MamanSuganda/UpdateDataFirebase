@@ -21,9 +21,13 @@ h1{
 }
 #dataKey{
     margin-bottom: 20px;
+    width: 210px;
+    height: 25px;
 }
 #newValue{
     margin-bottom: 20px;
+    width: 210px;
+    height: 25px;
 }
 .button-update{
     background: linear-gradient(#b000c3, #6a00ac);
